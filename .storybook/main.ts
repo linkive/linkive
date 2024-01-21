@@ -1,6 +1,8 @@
 import type { StorybookConfig } from "@storybook/nextjs";
+const path = require("path");
 
 const config: StorybookConfig = {
+  staticDirs: ["../public"],
   stories: [
     "../stories/**/*.mdx",
     "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
@@ -19,4 +21,5 @@ const config: StorybookConfig = {
     autodocs: "tag",
   },
 };
+
 export default config;
