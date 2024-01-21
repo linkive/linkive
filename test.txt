@@ -4,3 +4,35 @@ before
 after
     "storybook": "start-storybook -p 6006 -s ./public",
     "build-storybook": "build-storybook -s public",
+
+
+github
+cencivic 9336711 
+
+kyungbin@kyungbinui-Macmini linkive % npx chromatic --project-token=chpt_1bc9f73142c9129
+
+Chromatic CLI v10.1.0
+https://www.chromatic.com/docs/cli
+
+  ✔ Authenticated with Chromatic
+    → Using project token '****************9129'
+  ✔ Retrieved git information
+    → Commit '4059309' on branch 'feature/test_version'; found 1 parent build
+  ✔ Collected Storybook metadata
+    → Storybook 7.6.4 for React; using the @storybook/nextjs builder (7.6.4); supported addons found: Links, Essentials, Interactions
+  ✔ Initialized build
+    → Build 3 initialized
+  ✔ Storybook built in 10 seconds
+    → View build log at /Users/kyungbin/Desktop/programming/linkive/build-storybook.log
+  ✔ Publish complete in 27 seconds
+    → View your Storybook at https://6576de1152b0b06931951593-ktjrxrokpd.chromatic.com
+  ✔ Started build 3
+    → View build details at https://www.chromatic.com/build?appId=6576de1152b0b06931951593&number=3
+  ✔ Build 3 completed
+    → Tested 1 story across 1 component; captured 1 snapshot in 58 seconds
+
+✖ Found 1 visual change: Review the changes at https://www.chromatic.com/build?appId=6576de1152b0b06931951593&number=3
+
+ℹ For CI/CD use cases, this command failed with exit code 1
+Pass --exit-zero-on-changes to succeed this command regardless of changes.
+Pass --auto-accept-changes to succeed and automatically accept any changes.

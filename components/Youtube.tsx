@@ -61,7 +61,15 @@ export const YouTubeEmbed = ({ videoId }: YoutubeEmbedProps) => {
   });
 
   return isClient ? (
-    <video ref={videoRef} width="100%" height="100%" muted preload="auto" loop>
+    <video
+      ref={videoRef}
+      width="100%"
+      height="100%"
+      muted
+      preload="auto"
+      playsInline
+      loop
+    >
       <source src="/video/outputBetter.mp4" type="video/mp4" />
     </video>
   ) : (
