@@ -60,36 +60,32 @@ export default function Home({ contentNumber = 4 }: HomeProps) {
       <RankBar />
       <Divider height={10} />
 
-      {showSheet ? (
-        <AnimatePresence>
-          <BottomSheet firstHeight={600} setShowSheet={setShowSheet}>
-            <div className={style.feedBox_product_dropbox_container}>
-              <div className={style.feedBox_product_info}>
-                <span className={style.feedBox_product_info_description}>
-                  코디 상품 모아보기
-                </span>
-                <span className={style.feedBox_product_info_count}>4</span>
-              </div>
+      <BottomSheet
+        isVisible={showSheet}
+        firstHeight={600}
+        setShowSheet={setShowSheet}
+      >
+        <div className={style.feedBox_product_dropbox_container}>
+          <div className={style.feedBox_product_info}>
+            <span className={style.feedBox_product_info_description}>
+              코디 상품 모아보기
+            </span>
+            <span className={style.feedBox_product_info_count}>4</span>
+          </div>
 
-              {/* 4번 반복 */}
-              <FeedBoxProductDropBox />
-              <FeedBoxProductDropBox />
-              <FeedBoxProductDropBox />
-              <FeedBoxProductDropBox />
+          {/* 4번 반복 */}
+          <FeedBoxProductDropBox />
+          <FeedBoxProductDropBox />
+          <FeedBoxProductDropBox />
+          <FeedBoxProductDropBox />
 
-              {/* 반복 끝 */}
+          {/* 반복 끝 */}
 
-              <div className={style.feedBox_product_btnset}>
-                <div className={style.feedBox_product_btn}>
-                  영상 속 코디보기
-                </div>
-              </div>
-            </div>
-          </BottomSheet>
-        </AnimatePresence>
-      ) : (
-        <></>
-      )}
+          <div className={style.feedBox_product_btnset}>
+            <div className={style.feedBox_product_btn}>영상 속 코디보기</div>
+          </div>
+        </div>
+      </BottomSheet>
 
       {imageUrls.map((url: string, index: number) => (
         <FeedBox key={index} cutImg={url} setShowSheet={setShowSheet} />

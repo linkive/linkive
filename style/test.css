@@ -1,0 +1,72 @@
+.root {
+  font-size: 20px;
+  font-weight: 800;
+  max-width: 600px;
+  height: 1000vh;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  justify-content: flex-start;
+  align-items: center;
+  overscroll-behavior: none;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  height: 100px;
+  margin: 20px 0;
+
+  background-color: aquamarine;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.sheet {
+  position: fixed;
+  display: flex;
+  height: max-content;
+  width: 100%;
+  /* background-color: azure; */
+  overflow: auto;
+  overscroll-behavior-y: none;
+  flex-direction: column;
+}
+
+.hidden {
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden !important;
+  touch-action: none;
+}
+
+.drag {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  background-color: brown;
+}
+.container {
+  margin-top: 30px;
+  width: 100%;
+  height: 1000vh;
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+  line-height: 300%;
+}
+
+.bottomBtn {
+  position: relative;
+  bottom: 0;
+  width: 60%;
+  height: 50px;
+  background-color: black;
+}

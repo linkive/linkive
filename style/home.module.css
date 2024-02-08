@@ -9,7 +9,7 @@
   padding: 13px 18px;
   justify-content: space-between;
   align-items: center;
-  z-index: 999;
+  z-index: 50;
   background-color: var(--primary-white);
 }
 
