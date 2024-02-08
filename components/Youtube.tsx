@@ -70,7 +70,7 @@ export const YouTubeEmbed = ({ videoId }: YoutubeEmbedProps) => {
       playsInline
       loop
     >
-      <source src="/video/outputBetter.mp4" type="video/mp4" />
+      <source src="/video/outputBest.mp4" type="video/mp4" />
     </video>
   ) : (
     <></>

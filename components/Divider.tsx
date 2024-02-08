@@ -1,4 +1,4 @@
-export const Divider = ({ height }: { height: number }) => {
+export const Divider = ({ height = 10 }: { height?: number }) => {
   return (
     <div
       style={{
